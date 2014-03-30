@@ -1337,6 +1337,21 @@ extern const tGUI_XBF_APIList GUI_XBF_APIList_Prop_AA4_Ext;
 #define GUI_ID_BUTTON8 0x178
 #define GUI_ID_BUTTON9 0x179
 
+/************TonyAdd***********/
+#define GUI_ID_BUTTON10    0x910
+#define GUI_ID_BUTTON11    0x911
+#define GUI_ID_BUTTON12    0x912
+#define GUI_ID_BUTTON13    0x913
+#define GUI_ID_BUTTON14    0x914
+#define GUI_ID_BUTTON15    0x915
+#define GUI_ID_BUTTON16    0x916
+#define GUI_ID_BUTTON17    0x917
+
+#define GUI_ID_BUTTON18    0x918
+#define GUI_ID_BUTTON19    0x919
+/************TonyAddEnd********/
+
+
 #define GUI_ID_DROPDOWN0  0x180
 #define GUI_ID_DROPDOWN1  0x181
 #define GUI_ID_DROPDOWN2  0x182
