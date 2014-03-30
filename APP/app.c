@@ -27,7 +27,16 @@
 #include "includes.h"
 #include "demo.h"
 
-extern void GUIDEMO_main(void);		
+extern void GUIDEMO_main(void);	
+
+//============var
+const int ID_CURVE_BTN_SWTITCH_2_PARA = 0x200; 
+const int ID_CURVE_BTN_CLEAR = 0x201;
+
+const int ID_CFG_PID_BTN_SWTITCH_2_CURVE = 0x202;
+const int ID_CFG_PID_BTN_CLEAR = 0x203;
+
+int ClosePWM = 0;
 
 /*
 *********************************************************************************************************
@@ -38,6 +47,13 @@ extern void GUIDEMO_main(void);
 static  OS_STK App_TaskStartStk[APP_TASK_START_STK_SIZE];
 static  OS_STK AppTaskUserIFStk[APP_TASK_USER_IF_STK_SIZE];
 static  OS_STK AppTaskKbdStk[APP_TASK_KBD_STK_SIZE];
+
+/*
+Controlers
+*/
+WM_HWIN  hWM_HBKWIN_CURVE;
+BUTTON_Handle btn,btnClear,
+              btn1,btnClear1;
 
 
 /*
@@ -159,6 +175,83 @@ static  void App_TaskCreate(void)
                     OS_TASK_OPT_STK_CHK|OS_TASK_OPT_STK_CLR);	
 }
 
+
+static int _FRAMEWIN_DrawSkinFlex(const WIDGET_ITEM_DRAW_INFO * pDrawItemInfo) {
+  switch (pDrawItemInfo->Cmd) {
+  case WIDGET_ITEM_CREATE:
+    FRAMEWIN_SetTextAlign(pDrawItemInfo->hWin, GUI_TA_HCENTER | GUI_TA_VCENTER);
+    FRAMEWIN_SetTextColor(pDrawItemInfo->hWin, GUI_BLACK);
+    break;
+  default:
+    return FRAMEWIN_DrawSkinFlex(pDrawItemInfo);
+  }
+  return 0;
+}
+
+
+
+/*********************************************************************
+*
+*       _cbBk
+*/
+static void _cbBk(WM_MESSAGE * pMsg) 
+{
+	static unsigned int GirdFlag = 0;
+	int NCode, Id;
+  switch (pMsg->MsgId) {
+  case WM_PAINT:
+		GUI_SetBkColor(GUI_BLUE);
+	  GUI_Clear();
+    GUI_DispStringAt("PWM Output", 100, 10);
+   // GUIDEMO_DrawBk(1);
+    break;
+	case WM_TOUCH:
+		GirdFlag++;
+		//GRAPH_SetGridVis(hGraph,GirdFlag%3);  //!< Display the  if touch the screen
+		break;
+
+	/*******************/
+	case WM_NOTIFY_PARENT:
+      Id    = WM_GetId(pMsg->hWinSrc);    /* Id of widget */
+      NCode = pMsg->Data.v;               /* Notification code */
+      switch (NCode) {
+        case WM_NOTIFICATION_RELEASED:    /* React only if released */
+          if (Id == ID_CURVE_BTN_SWTITCH_2_PARA)  /* ID =210 btn Button */  
+					{                   	
+							ClosePWM = ! ClosePWM;
+							BUTTON_SetText(btn,"Closed");
+
+#if 0						
+							if(1 == ClosePWM)
+							{
+									BUTTON_SetText(btn,"Closed");
+							}
+							else
+							{
+									BUTTON_SetText(btn,"Running");
+							}
+#endif
+
+          } 	
+					if (Id == 202)  /* ID =210 btn Button */  
+					{                   	
+						BUTTON_SetText(btnClear,"PID_Set");
+					
+						//WM_HideWindow(hWM_HBKWIN_CURVE);
+          } 
+        break;      
+        default:          
+				{
+				}
+      }
+	break;
+	
+  default:
+    WM_DefaultProc(pMsg);
+  }
+}
+
+
 /****************************************************************************
 * 名    称：static  void  AppTaskUserIF (void *p_arg)
 * 功    能：用户界面任务
@@ -168,14 +261,59 @@ static  void App_TaskCreate(void)
 * 调用方法：无 
 ****************************************************************************/
 static  void  AppTaskUserIF (void *p_arg)
-{											   
- (void)p_arg;								    
-  GUI_Init();	                             //emWIN初始化 
-  while(1) 
-  {	
-  	 WM_SetCreateFlags(WM_CF_MEMDEV);
-     GUIDEMO_Main();						 //界面主程序
-  }
+{				
+	FRAMEWIN_SKINFLEX_PROPS Framewin_Props;
+
+	(void)p_arg;								    
+	GUI_Init();	                             //emWIN初始化 
+	WM_SetDesktopColor(GUI_BLUE);
+
+	GUI_Clear();
+
+	WM_SetCreateFlags(WM_CF_MEMDEV);
+	//GUIDEMO_Main();						 //界面主程序
+
+	/* The First window to display the Temperature Curve */
+	hWM_HBKWIN_CURVE =WM_GetDesktopWindow();
+	//hWM_HBKWIN_CURVE=WM_CreateWindow(0,0,320,240,WM_CF_SHOW | WM_CF_MEMDEV ,0,0);
+	WM_SetCallback(hWM_HBKWIN_CURVE, _cbBk);
+
+	WM_SelectWindow(hWM_HBKWIN_CURVE);		
+	
+
+	//GUI_SetBkColor(GUI_BLUE);
+#if (GUI_SUPPORT_CURSOR | GUI_SUPPORT_TOUCH)
+	GUI_CURSOR_Show();
+#endif
+#if 1  
+	BUTTON_SetReactOnLevel();
+	FRAMEWIN_GetSkinFlexProps(&Framewin_Props, FRAMEWIN_SKINFLEX_PI_ACTIVE);
+	Framewin_Props.Radius = 0;
+	FRAMEWIN_SetSkinFlexProps(&Framewin_Props, FRAMEWIN_SKINFLEX_PI_ACTIVE);
+	FRAMEWIN_GetSkinFlexProps(&Framewin_Props, FRAMEWIN_SKINFLEX_PI_INACTIVE);
+	Framewin_Props.Radius = 0;
+	FRAMEWIN_SetSkinFlexProps(&Framewin_Props, FRAMEWIN_SKINFLEX_PI_INACTIVE);
+
+	FRAMEWIN_SetDefaultSkin  (_FRAMEWIN_DrawSkinFlex);
+	PROGBAR_SetDefaultSkin   (PROGBAR_SKIN_FLEX);
+	BUTTON_SetDefaultSkin    (BUTTON_SKIN_FLEX);
+	SCROLLBAR_SetDefaultSkin (SCROLLBAR_SKIN_FLEX);
+	SLIDER_SetDefaultSkin    (SLIDER_SKIN_FLEX);
+	HEADER_SetDefaultSkin    (HEADER_SKIN_FLEX);
+
+	btn = BUTTON_CreateAsChild(215, 10, 75, 35,hWM_HBKWIN_CURVE, ID_CURVE_BTN_SWTITCH_2_PARA, WM_CF_SHOW);
+	btnClear = BUTTON_CreateAsChild(215, 60, 75, 35,hWM_HBKWIN_CURVE, 202, WM_CF_SHOW);
+	BUTTON_SetText(btn,"Start");
+	BUTTON_SetText(btnClear,"Back");
+#endif
+	//WM_ShowWindow(hWM_HBKWIN_CURVE);
+
+	
+    while(1) 
+	{
+		GUI_Exec();	
+	 	OSTimeDlyHMSM(0,0,0,50);
+	}
 }
 /****************************************************************************
 * 名    称：static  void  AppTaskKbd (void *p_arg)

@@ -62,7 +62,7 @@
 ### ADS-LD Output File: '..\ObjFlash\STM32-FD-emWin.axf'
 ### ADS-LD Command File: '..\ObjFlash\STM32-FD-emWin.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\ObjFlash\STM32-FD-emWin.lnp', Handle=0x000002EC
+### Creating CmdFile '..\ObjFlash\STM32-FD-emWin.lnp', Handle=0x000005C0
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\ObjFlash\STM32-FD-emWin.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

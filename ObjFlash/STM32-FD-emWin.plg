@@ -65,3 +65,2129 @@ linking...
 Program Size: Code=151654 RO-data=332990 RW-data=4668 ZI-data=45292  
 FromELF: creating hex file...
 "..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Flash'
+assembling stm32f10x_startup.s...
+compiling app.c...
+app.c(73): warning:  #550-D: variable "os_err" was set but never used
+compiling stm32f10x_it.c...
+compiling bsp.c...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling os_cpu_c.c...
+compiling os_dbg.c...
+assembling os_cpu_a.asm...
+assembling cpu_a.asm...
+compiling os_core.c...
+compiling os_flag.c...
+compiling os_mbox.c...
+compiling os_mem.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_task.c...
+compiling os_time.c...
+compiling os_tmr.c...
+compiling GUI_X_Touch.c...
+compiling GUI_X_uCOS.c...
+compiling LCDConf.c...
+compiling GUIConf.c...
+compiling GUIDEMO.c...
+compiling GUIDEMO_Automotive.c...
+compiling GUIDEMO_BarGraph.c...
+compiling GUIDEMO_Bitmap.c...
+compiling GUIDEMO_ColorBar.c...
+compiling GUIDEMO_Conf.c...
+compiling GUIDEMO_Cursor.c...
+compiling GUIDEMO_Fading.c...
+compiling GUIDEMO_Graph.c...
+compiling GUIDEMO_IconView.c...
+compiling GUIDEMO_ImageFlow.c...
+compiling GUIDEMO_Intro.c...
+compiling GUIDEMO_Listview.c...
+compiling GUIDEMO_Resource.c...
+compiling GUIDEMO_Skinning.c...
+compiling GUIDEMO_Speed.c...
+compiling GUIDEMO_Speedometer.c...
+compiling GUIDEMO_TransparentDialog.c...
+compiling GUIDEMO_Treeview.c...
+compiling GUIDEMO_VScreen.c...
+compiling GUIDEMO_WashingMachine.c...
+compiling GUIDEMO_ZoomAndRotate.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling hwhb_32.c...
+linking...
+Program Size: Code=29224 RO-data=3332 RW-data=464 ZI-data=43712  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.216V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+assembling stm32f10x_startup.s...
+compiling app.c...
+app.c(73): warning:  #550-D: variable "os_err" was set but never used
+compiling stm32f10x_it.c...
+compiling bsp.c...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling os_cpu_c.c...
+compiling os_dbg.c...
+assembling os_cpu_a.asm...
+assembling cpu_a.asm...
+compiling os_core.c...
+compiling os_flag.c...
+compiling os_mbox.c...
+compiling os_mem.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_task.c...
+compiling os_time.c...
+compiling os_tmr.c...
+compiling GUI_X_Touch.c...
+compiling GUI_X_uCOS.c...
+compiling LCDConf.c...
+compiling GUIConf.c...
+compiling GUIDEMO.c...
+compiling GUIDEMO_Automotive.c...
+compiling GUIDEMO_BarGraph.c...
+compiling GUIDEMO_Bitmap.c...
+compiling GUIDEMO_ColorBar.c...
+compiling GUIDEMO_Conf.c...
+compiling GUIDEMO_Cursor.c...
+compiling GUIDEMO_Fading.c...
+compiling GUIDEMO_Graph.c...
+compiling GUIDEMO_IconView.c...
+compiling GUIDEMO_ImageFlow.c...
+compiling GUIDEMO_Intro.c...
+compiling GUIDEMO_Listview.c...
+compiling GUIDEMO_Resource.c...
+compiling GUIDEMO_Skinning.c...
+compiling GUIDEMO_Speed.c...
+compiling GUIDEMO_Speedometer.c...
+compiling GUIDEMO_TransparentDialog.c...
+compiling GUIDEMO_Treeview.c...
+compiling GUIDEMO_VScreen.c...
+compiling GUIDEMO_WashingMachine.c...
+compiling GUIDEMO_ZoomAndRotate.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling hwhb_32.c...
+linking...
+Program Size: Code=38856 RO-data=3496 RW-data=552 ZI-data=43712  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.209V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+assembling stm32f10x_startup.s...
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(196): error:  #20: identifier "hGraph" is undefined
+app.c(263): error:  #20: identifier "hWM_HBKWIN_CFG_PID" is undefined
+app.c(183): warning:  #177-D: function "_cbBk" was declared but never referenced
+compiling stm32f10x_it.c...
+compiling bsp.c...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling os_cpu_c.c...
+compiling os_dbg.c...
+assembling os_cpu_a.asm...
+assembling cpu_a.asm...
+compiling os_core.c...
+compiling os_flag.c...
+compiling os_mbox.c...
+compiling os_mem.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_task.c...
+compiling os_time.c...
+compiling os_tmr.c...
+compiling GUI_X_Touch.c...
+compiling GUI_X_uCOS.c...
+compiling LCDConf.c...
+compiling GUIConf.c...
+compiling GUIDEMO.c...
+compiling GUIDEMO_Automotive.c...
+compiling GUIDEMO_BarGraph.c...
+compiling GUIDEMO_Bitmap.c...
+compiling GUIDEMO_ColorBar.c...
+compiling GUIDEMO_Conf.c...
+compiling GUIDEMO_Cursor.c...
+compiling GUIDEMO_Fading.c...
+compiling GUIDEMO_Graph.c...
+compiling GUIDEMO_IconView.c...
+compiling GUIDEMO_ImageFlow.c...
+compiling GUIDEMO_Intro.c...
+compiling GUIDEMO_Listview.c...
+compiling GUIDEMO_Resource.c...
+compiling GUIDEMO_Skinning.c...
+compiling GUIDEMO_Speed.c...
+compiling GUIDEMO_Speedometer.c...
+compiling GUIDEMO_TransparentDialog.c...
+compiling GUIDEMO_Treeview.c...
+compiling GUIDEMO_VScreen.c...
+compiling GUIDEMO_WashingMachine.c...
+compiling GUIDEMO_ZoomAndRotate.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling hwhb_32.c...
+Target not created
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(196): error:  #20: identifier "hGraph" is undefined
+app.c(263): error:  #20: identifier "hWM_HBKWIN_CFG_PID" is undefined
+app.c(183): warning:  #177-D: function "_cbBk" was declared but never referenced
+app.c - 2 Error(s), 2 Warning(s).
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(196): error:  #20: identifier "hGraph" is undefined
+app.c(183): warning:  #177-D: function "_cbBk" was declared but never referenced
+Target not created
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(183): warning:  #177-D: function "_cbBk" was declared but never referenced
+linking...
+Program Size: Code=43528 RO-data=7740 RW-data=652 ZI-data=43716  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 2 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.209V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(183): warning:  #177-D: function "_cbBk" was declared but never referenced
+linking...
+Program Size: Code=43528 RO-data=7740 RW-data=652 ZI-data=43716  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Flash'
+linking...
+Program Size: Code=43528 RO-data=7740 RW-data=652 ZI-data=43716  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.209V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=44148 RO-data=7740 RW-data=660 ZI-data=43716  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.203V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=44132 RO-data=7740 RW-data=660 ZI-data=43716  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.203V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=44140 RO-data=7740 RW-data=660 ZI-data=43716  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.209V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+linking...
+Program Size: Code=44140 RO-data=7740 RW-data=660 ZI-data=43716  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(266): error:  #20: identifier "_FRAMEWIN_DrawSkinFlex" is undefined
+Target not created
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=59880 RO-data=11160 RW-data=1380 ZI-data=43740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.203V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=59872 RO-data=11160 RW-data=1380 ZI-data=43740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.203V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=59852 RO-data=11160 RW-data=1380 ZI-data=43740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.209V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=63932 RO-data=11304 RW-data=1392 ZI-data=44760  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.203V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64220 RO-data=11312 RW-data=1392 ZI-data=44760  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.203V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+linking...
+Program Size: Code=64220 RO-data=11312 RW-data=1392 ZI-data=44760  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.209V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(309): warning:  #223-D: function "_Draw_1" declared implicitly
+linking...
+..\ObjFlash\STM32-FD-emWin.axf: Error: L6218E: Undefined symbol _Draw_1 (referred from app.o).
+Target not created
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64172 RO-data=11312 RW-data=1392 ZI-data=44760  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64188 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64180 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64236 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64236 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+assembling stm32f10x_startup.s...
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+compiling stm32f10x_it.c...
+compiling bsp.c...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling os_cpu_c.c...
+compiling os_dbg.c...
+assembling os_cpu_a.asm...
+assembling cpu_a.asm...
+compiling os_core.c...
+compiling os_flag.c...
+compiling os_mbox.c...
+compiling os_mem.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_task.c...
+compiling os_time.c...
+compiling os_tmr.c...
+compiling GUI_X_Touch.c...
+compiling GUI_X_uCOS.c...
+compiling LCDConf.c...
+compiling GUIConf.c...
+compiling GUIDEMO.c...
+compiling GUIDEMO_Automotive.c...
+compiling GUIDEMO_BarGraph.c...
+compiling GUIDEMO_Bitmap.c...
+compiling GUIDEMO_ColorBar.c...
+compiling GUIDEMO_Conf.c...
+compiling GUIDEMO_Cursor.c...
+compiling GUIDEMO_Fading.c...
+compiling GUIDEMO_Graph.c...
+compiling GUIDEMO_IconView.c...
+compiling GUIDEMO_ImageFlow.c...
+compiling GUIDEMO_Intro.c...
+compiling GUIDEMO_Listview.c...
+compiling GUIDEMO_Resource.c...
+compiling GUIDEMO_Skinning.c...
+compiling GUIDEMO_Speed.c...
+compiling GUIDEMO_Speedometer.c...
+compiling GUIDEMO_TransparentDialog.c...
+compiling GUIDEMO_Treeview.c...
+compiling GUIDEMO_VScreen.c...
+compiling GUIDEMO_WashingMachine.c...
+compiling GUIDEMO_ZoomAndRotate.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling hwhb_32.c...
+linking...
+Program Size: Code=64180 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64236 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64232 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64252 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+linking...
+Program Size: Code=64252 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64248 RO-data=11312 RW-data=1436 ZI-data=44764  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+linking...
+Program Size: Code=44640 RO-data=3664 RW-data=632 ZI-data=44736  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 3 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.183V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+app.c(197): warning:  #177-D: function "_cbBk" was declared but never referenced
+linking...
+Program Size: Code=42896 RO-data=3664 RW-data=560 ZI-data=44736  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 4 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.183V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+app.c(197): warning:  #177-D: function "_cbBk" was declared but never referenced
+linking...
+Program Size: Code=42912 RO-data=3664 RW-data=564 ZI-data=44740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 4 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.183V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+app.c(197): warning:  #177-D: function "_cbBk" was declared but never referenced
+linking...
+Program Size: Code=42916 RO-data=3664 RW-data=564 ZI-data=44740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 4 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.183V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+linking...
+Program Size: Code=44524 RO-data=3664 RW-data=632 ZI-data=44736  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 3 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.183V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+linking...
+Program Size: Code=44508 RO-data=3664 RW-data=588 ZI-data=44740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 3 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+linking...
+Program Size: Code=44516 RO-data=3664 RW-data=588 ZI-data=44740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 3 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.183V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+linking...
+Program Size: Code=44516 RO-data=3664 RW-data=588 ZI-data=44740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+linking...
+Program Size: Code=44532 RO-data=3664 RW-data=632 ZI-data=44736  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 3 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+linking...
+Program Size: Code=44516 RO-data=3664 RW-data=588 ZI-data=44740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 3 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.183V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+app.c(265): warning:  #177-D: variable "Framewin_Props" was declared but never referenced
+app.c(179): warning:  #177-D: function "_FRAMEWIN_DrawSkinFlex" was declared but never referenced
+linking...
+Program Size: Code=44520 RO-data=3664 RW-data=588 ZI-data=44740  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 3 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.183V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'Flash'
+compiling app.c...
+app.c(85): warning:  #550-D: variable "os_err" was set but never used
+linking...
+Program Size: Code=64128 RO-data=11312 RW-data=1392 ZI-data=44760  
+FromELF: creating hex file...
+"..\ObjFlash\STM32-FD-emWin.axf" - 0 Error(s), 1 Warning(s).
+Load "..\\ObjFlash\\STM32-FD-emWin.AXF" 
+
+JLink info:
+-----------
+DLL: V4.08b, compiled Jun 30 2009 19:10:31
+Firmware: J-Link ARM V8 compiled Dec  1 2015 11:42:48
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+
+Target info:
+------------
+Device: STM32F103VE
+VTarget = 3.190V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+---
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
