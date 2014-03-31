@@ -29,6 +29,15 @@
 
 extern void GUIDEMO_main(void);	
 
+extern u16 CCR1_Val;
+
+float PwmCH1,PwmCH2,PwmCH3;
+unsigned int PWM_CH1_Interval[3];
+unsigned int BK_Light = 0;
+
+char acBuffer[10],bcBuffer[10],ccBuffer[10];
+
+
 //============var
 const int ID_CURVE_BTN_SWTITCH_2_PARA = 0x200; 
 const int ID_CURVE_BTN_CLEAR = 0x201;
@@ -37,6 +46,45 @@ const int ID_CFG_PID_BTN_SWTITCH_2_CURVE = 0x202;
 const int ID_CFG_PID_BTN_CLEAR = 0x203;
 
 int ClosePWM = 0;
+
+#define CHANNEL_NUM 3
+
+void LED_LED1_ON(void)
+{
+	GPIO_SetBits(GPIOB, GPIO_Pin_5 );  	       //LED1  亮
+}
+void LED_LED1_OFF(void){
+	GPIO_ResetBits(GPIOB, GPIO_Pin_5 ); 	   //LED1  灭
+}
+
+void PWM_PB8_CH2_ON(void){
+	GPIO_SetBits(GPIOB, GPIO_Pin_8 );  
+}
+void PWM_PB8_CH2_OFF(void){
+	GPIO_ResetBits(GPIOB, GPIO_Pin_8 ); 
+}
+void PWM_PB9_CH3_ON(void){
+	GPIO_SetBits(GPIOB, GPIO_Pin_9 );  
+}
+void PWM_PB9_CH3_OFF(void){
+	GPIO_ResetBits(GPIOB, GPIO_Pin_9 );
+}
+
+
+typedef void (OnOff_fnc_t) (void);
+
+OnOff_fnc_t* PWM_ON[CHANNEL_NUM]={
+	LED_LED1_ON,
+	PWM_PB8_CH2_ON,
+	PWM_PB9_CH3_ON,
+};
+
+OnOff_fnc_t* PWM_OFF[CHANNEL_NUM]={
+	   LED_LED1_OFF,
+	   PWM_PB8_CH2_OFF,
+	   PWM_PB9_CH3_OFF,
+};
+
 
 /*********************************************************************
 *
@@ -67,9 +115,9 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
     { BUTTON_CreateIndirect,    "Ch2",                GUI_ID_BUTTON13,          91, 11, 72, 23, 0,0},
     { BUTTON_CreateIndirect,    "Ch3",                GUI_ID_BUTTON14,          172,11, 75, 23, 0,0},
 //    { BUTTON_CreateIndirect,    "E",                 GUI_ID_BUTTON15,          253,11, 55, 23, 0,0},
-    { BUTTON_CreateIndirect,    "OK",                GUI_ID_BUTTON16,         316,187,75, 34, 0,0},
+    { BUTTON_CreateIndirect,    "OK",                GUI_ID_BUTTON16,         254,160,40, 40, 0,0},
     { SLIDER_CreateIndirect,     NULL,               GUI_ID_SLIDER0,          254,76, 40, 31, 0,0},
-    { BUTTON_CreateIndirect,    "Set",               GUI_ID_BUTTON17,         314,12, 75, 23, 0,0},
+//    { BUTTON_CreateIndirect,    "Set",               GUI_ID_BUTTON17,         314,12, 75, 23, 0,0},
   //  { EDIT_CreateIndirect,       NULL,               GUI_ID_EDIT4,            316,41, 69, 29, 0,0},
   //  { BUTTON_CreateIndirect,    "Next",          	 GUI_ID_BUTTON18,         316,113,75, 31, 0,0},
   //  { BUTTON_CreateIndirect,    "Prev",          	 GUI_ID_BUTTON19,         316,148,75, 31, 0,0},
@@ -91,8 +139,7 @@ static  OS_STK AppTaskKbdStk[APP_TASK_KBD_STK_SIZE];
 Controlers
 */
 WM_HWIN  hWM_HBKWIN_CURVE,hWN_PWM_CFG_Frame;
-BUTTON_Handle btn,btnClear,
-              btn1,btnClear1;
+BUTTON_Handle btn,btnClear;
 EDIT_Handle PWM_EDIT = GUI_ID_EDIT0;
 
 
@@ -156,7 +203,8 @@ int main(void)
 ****************************************************************************/
 static  void App_TaskStart(void* p_arg)
 {
- 
+	static unsigned long counter =0;
+	static unsigned long SwitchFlag[CHANNEL_NUM];
   (void) p_arg;
    //初始化ucosII时钟节拍
    OS_CPU_SysTickInit();
@@ -170,12 +218,23 @@ static  void App_TaskStart(void* p_arg)
    App_TaskCreate();			//建立其他的任务
 
    while (1)
-   {  
-      LED_LED1_ON();		      	  
-	  OSTimeDlyHMSM(0, 0, 0, 100);
+   {  	
+   		int i =0;
+   		for(i=0; i<CHANNEL_NUM; i++){
+			if(counter % PWM_CH1_Interval[i] == 0){
+				SwitchFlag[i]++;
+				if( (SwitchFlag[i] % 2) == 1){
+					PWM_ON[i]();
+				}
+				else{
+					PWM_OFF[i]();
+				}
+			}
+		}	
 
-	  LED_LED1_OFF();
-	  OSTimeDlyHMSM(0, 0, 0, 100);
+		OSTimeDlyHMSM(0, 0, 1, 0);
+		counter++;
+		
    }
 }
 
@@ -287,7 +346,7 @@ static void _cbBk_PWM_CFG(WM_MESSAGE * pMsg)
             }
             break;
         case WM_NOTIFY_PARENT:
-				GUI_DispStringAt("Frame",10,220);
+				//GUI_DispStringAt("Frame",10,220);
             	Id = WM_GetId(pMsg->hWinSrc); 
             	NCode = pMsg->Data.v;            
 				switch(NCode)
@@ -309,14 +368,38 @@ static void _cbBk_PWM_CFG(WM_MESSAGE * pMsg)
 							 WM_SetFocus(WM_GetDialogItem(hWN_PWM_CFG_Frame,PWM_EDIT));
 							 GUI_SendKeyMsg(GUI_KEY_BACKSPACE,1);  
 						}
+
+						if((Id >= GUI_ID_EDIT0) && (Id <= GUI_ID_EDIT2) ){
+							PWM_EDIT = Id;
+						}
+
+						if(Id == GUI_ID_BUTTON16){
+							
+							EDIT_GetText( WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT0), acBuffer,8);
+							EDIT_GetText( WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT1), bcBuffer,8);
+							EDIT_GetText( WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT2), ccBuffer,8);
+							PWM_CH1_Interval[0] = atoi(acBuffer);
+							PWM_CH1_Interval[1] = atoi(bcBuffer);
+							PWM_CH1_Interval[2] = atoi(ccBuffer);							
+							
+							//PWM_CH1_Interval = EDIT_GetValue( WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT0) );
+#if 0
+							PwmCH1 = EDIT_GetValue( WM_GetDialogItem(hWN_PWM_CFG_Frame,PWM_EDIT) );
+							PwmCH2 = EDIT_GetValue( WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT1) );
+							PwmCH3 = EDIT_GetValue( WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT2) );
+							PWM_CH1_Interval = (unsigned int)PwmCH1;
+							PWM_CH2_Interval = (unsigned int)PwmCH2;							
+							PWM_CH3_Interval = (unsigned int)PwmCH3;							
+#endif							
+						}
 						
 						/* Up and down of the order of the PID Array */
 
 						if(Id == GUI_ID_SLIDER0)
 						{	
-							#if 0
+							#if 1
 									BK_Light = SLIDER_GetValue(WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_SLIDER0));
-									SetPWM(BK_Light,PWM_BACK_LIGHT);																									
+									//SetPWM(BK_Light,PWM_BACK_LIGHT);																									
 							#endif
 						}
 				
@@ -405,6 +488,8 @@ static void _cbBk(WM_MESSAGE * pMsg)
 static  void  AppTaskUserIF (void *p_arg)
 {				
 	FRAMEWIN_SKINFLEX_PROPS Framewin_Props;
+	//CCR1_Val=6000;
+	//Light_PWM();
 
 	(void)p_arg;								    
 	GUI_Init();	                             //emWIN初始化 
@@ -452,6 +537,22 @@ static  void  AppTaskUserIF (void *p_arg)
 
 	hWN_PWM_CFG_Frame = GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbBk_PWM_CFG, 0, 0, 0);	
 	GUI_ExecCreatedDialog(hWN_PWM_CFG_Frame);
+
+	EDIT_SetDecMode(
+					WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT0),
+					1,0,999,0,0);
+	EDIT_SetDecMode(
+			WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT1),
+			1,0,999,0,0);
+	EDIT_SetDecMode(
+			WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT2),
+			1,0,999,0,0);
+
+	EDIT_SetMaxLen(WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT0),7);
+	EDIT_SetMaxLen(WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT1),7);
+	EDIT_SetMaxLen(WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT2),7);
+	WM_SetFocus(WM_GetDialogItem(hWN_PWM_CFG_Frame,GUI_ID_EDIT0));
+
 
 	WM_ValidateWindow(hWM_HBKWIN_CURVE);
 	WM_ValidateWindow(WM_GetDesktopWindow());

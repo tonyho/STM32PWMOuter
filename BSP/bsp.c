@@ -18,6 +18,11 @@
 #include "includes.h"
 #include "demo.h"
 
+//#include "..\fwlib\inc\Stm32f10x_tim.h"
+
+
+u16 CCR1_Val=24000;		                        //背光亮度值
+
 /* 定义了触摸芯片的SPI片选控制 */
 #define TP_CS()  GPIO_ResetBits(GPIOB,GPIO_Pin_7)	  
 #define TP_DCS() GPIO_SetBits(GPIOB,GPIO_Pin_7)
@@ -30,8 +35,157 @@ u16 TPReadX(void);
 u16 TPReadY(void);
 extern void FSMC_LCD_Init(void); 
 
+/****************************************************************************
+* 名    称：void Light_PWM(void)
+* 功    能：通过定时器4的2通道，采用PWM方式调节TFT背光亮度
+* 入口参数：无
+* 出口参数：无
+* 说    明：
+* 调用方法：无 
+****************************************************************************/ 
+
+void Light_PWM(void){
+  TIM_TimeBaseInitTypeDef  TIM4_TimeBaseStructure;
+  TIM_OCInitTypeDef  TIM4_OCInitStructure;
+ 
+  GPIO_InitTypeDef GPIO_InitStructure;	   
+  
+  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);   	  //使能TIM4的时钟
+
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;				  
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;			  //配置为复用
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_Init(GPIOD, &GPIO_InitStructure);
+  GPIO_PinRemapConfig(GPIO_Remap_TIM4 , ENABLE);			  //PD13复用为TIM4的通道2
 
 
+   /*-------------------------------------------------------------------
+  TIM3CLK=72MHz  预分频系数Prescaler=2 经过分频 定时器时钟为24MHz
+  根据公式 通道输出占空比=TIM4_CCR2/(TIM_Period+1),可以得到TIM_Pulse的计数值	 
+  捕获/比较寄存器2 TIM4_CCR2= CCR1_Val 	      
+  -------------------------------------------------------------------*/
+  TIM4_TimeBaseStructure.TIM_Prescaler = 0x02;		              //预分频器TIM4_PSC=3
+  TIM4_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;	  //计数器向上计数模式 TIM4_CR1[4]=0
+  TIM4_TimeBaseStructure.TIM_Period = 24000;					  //自动重装载寄存器TIM4_APR  确定频率为1KHz 
+  TIM4_TimeBaseStructure.TIM_ClockDivision = 0x0;				  //时钟分频因子 TIM4_CR1[9:8]=00
+  TIM4_TimeBaseStructure.TIM_RepetitionCounter = 0x0;
+
+  TIM_TimeBaseInit(TIM4,&TIM4_TimeBaseStructure);				  //写TIM4各寄存器参数
+
+  
+  TIM4_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM2; 					  //PWM模式2 TIM4_CCMR1[14:12]=111 在向上计数时，
+  																		  //一旦TIMx_CNT<TIMx_CCR1时通道1为无效电平，否则为有效电平
+  TIM4_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable; 		  //输入/捕获2输出允许  OC2信号输出到对应的输出引脚PD13
+  TIM4_OCInitStructure.TIM_Pulse = CCR1_Val; 							  //确定占空比，这个值决定了有效电平的时间。
+  TIM4_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_Low; 			  //输出极性  低电平有效 TIM4_CCER[5]=1;
+
+
+  TIM_OC2Init(TIM4,&TIM4_OCInitStructure); 
+  TIM_OC2PreloadConfig(TIM4, TIM_OCPreload_Enable);
+  
+
+
+  /* TIM4使能 */
+  TIM_Cmd(TIM4,ENABLE);
+
+ 
+}
+
+#if 0
+
+/*
+*********************************************************************************************************
+*	函 数 名: SetPWM_TIM4
+*	功能说明: 初始化GPIO,配置为PWM模式
+*	形    参：_bright 亮度，0是灭，255是最亮
+*	返 回 值: 无
+*********************************************************************************************************
+*/
+
+
+
+void SetPWM_TIM4(unsigned short _bright,unsigned int PWM_CH)
+{
+
+	GPIO_InitTypeDef GPIO_InitStructure;
+	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+	TIM_OCInitTypeDef  TIM_OCInitStructure;
+
+	/* 第1步：打开GPIOB RCC_APB2Periph_AFIO 的时钟	*/
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_AFIO, ENABLE);
+
+
+	
+	/* Configure the PIN */
+	{
+		/* 配置背光GPIO为复用推挽输出模式 */
+		GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_8 | GPIO_Pin_9;
+		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+		GPIO_Init(GPIOB, &GPIO_InitStructure);
+
+		/* 使能TIM3的时钟 */
+		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+	}
+		
+			
+	{
+		/*
+			TIM4 配置: 产生2路PWM信号;
+			TIM3CLK = 72 MHz, Prescaler = 0(不分频), TIM3 counter clock = 72 MHz
+			计算公式：
+			PWM输出频率 = TIM3 counter clock /(ARR + 1)
+
+			我们期望设置为100Hz
+
+			如果不对TIM3CLK预分频，那么不可能得到100Hz低频。
+			我们设置分频比 = 1000， 那么  TIM3 counter clock = 72KHz
+			TIM_Period = 720 - 1;
+			频率下不来。
+		 */
+		TIM_TimeBaseStructure.TIM_Period = 720 - 1;	/* TIM_Period = TIM3 ARR Register */
+		TIM_TimeBaseStructure.TIM_Prescaler = 0;
+		TIM_TimeBaseStructure.TIM_ClockDivision = 0;
+		TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+
+		TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);
+
+		/* PWM1 Mode configuration */
+		TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;// 输出模式
+		TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
+	}	
+
+	/*
+		_bright = 1 时, TIM_Pulse = 1
+		_bright = 255 时, TIM_Pulse = TIM_Period
+	*/
+	
+
+	
+	if(PWM_PB8_CH3 == PWM_CH)
+	{
+		TIM_OCInitStructure.TIM_Pulse = (TIM_TimeBaseStructure.TIM_Period * _bright) / BRIGHT_MAX;	/* 改变占空比 */
+
+		TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
+		TIM_OC3Init(TIM4, &TIM_OCInitStructure);
+		TIM_OC3PreloadConfig(TIM4, TIM_OCPreload_Enable);
+	}
+	
+	if(PWM_PB9_CH4 == PWM_CH)
+	{
+		TIM_OCInitStructure.TIM_Pulse = (TIM_TimeBaseStructure.TIM_Period * _bright) / BRIGHT_MAX;	/* 改变占空比 */
+
+		TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
+		TIM_OC4Init(TIM4, &TIM_OCInitStructure);
+		TIM_OC4PreloadConfig(TIM4, TIM_OCPreload_Enable);
+	}
+	
+	TIM_ARRPreloadConfig(TIM4, ENABLE);
+
+	/* TIM4 enable counter */
+	TIM_Cmd(TIM4, ENABLE);
+}
+#endif
 
 /****************************************************************************
 * 名    称：void RCC_Configuration(void)
@@ -61,7 +215,7 @@ void GPIO_Configuration(void)
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOC |
                          RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOE , ENABLE);  
   	
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;				                 //LED1
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5 | GPIO_Pin_8 | GPIO_Pin_9;				                 //LED1
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_Init(GPIOB, &GPIO_InitStructure);	

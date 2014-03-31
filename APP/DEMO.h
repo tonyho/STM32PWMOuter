@@ -5,8 +5,16 @@
 #define EXT extern 
 #endif
 
+#if 0
 #define LED_LED1_ON()   GPIO_SetBits(GPIOB, GPIO_Pin_5 );  	       //LED1  ÁÁ
 #define LED_LED1_OFF()  GPIO_ResetBits(GPIOB, GPIO_Pin_5 ); 	   //LED1  Ãð
+
+#define PWM_PB8_CH2_ON() GPIO_SetBits(GPIOB, GPIO_Pin_8 );  
+#define PWM_PB8_CH2_OFF()  GPIO_ResetBits(GPIOB, GPIO_Pin_8 ); 
+#define PWM_PB9_CH3_ON() GPIO_SetBits(GPIOB, GPIO_Pin_9 );  
+#define PWM_PB9_CH3_OFF()  GPIO_ResetBits(GPIOB, GPIO_Pin_9 );
+#endif
+
 EXT uint8_t TxBuffer1[400]; 
 EXT uint8_t TxBuffer2[]; 
 EXT uint8_t RxBuffer1[400];
