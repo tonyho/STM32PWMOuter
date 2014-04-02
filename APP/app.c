@@ -48,6 +48,8 @@ const int ID_CFG_PID_BTN_CLEAR = 0x203;
 int ClosePWM = 0;
 
 #define CHANNEL_NUM 3
+#define OFF_SEC 5
+
 
 void LED_LED1_ON(void)
 {
@@ -228,6 +230,9 @@ static  void App_TaskStart(void* p_arg)
 				}
 				else{
 					PWM_OFF[i]();
+					if( PWM_CH1_Interval[i]>OFF_SEC){						
+						counter= PWM_CH1_Interval[i] - OFF_SEC;
+					}
 				}
 			}
 		}	

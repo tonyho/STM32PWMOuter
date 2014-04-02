@@ -1,6 +1,6 @@
 Dependencies for Project 'STM32-FD-emWin', Target 'Flash': (DO NOT MODIFY !)
 F (..\Startup\stm32f10x_startup.s)(0x5338CF04)(--device DARMSTM -g --apcs=interwork -I "C:\Keil\ARM\INC\ST\STM32F10x" -o "..\ObjFlash\stm32f10x_startup.o")
-F (.\app.c)(0x53390AD5)(-c --device DARMSTM -g -O1 --apcs=interwork --split_sections -I..\APP -I..\BSP -I..\FWLib\inc -I..\Startup -I..\uCOS-II\Source -I..\uCOS-II\uC-CPU -I..\uCOS-II\uC-LIB -I..\uCOS-II\Ports -I..\GUIDemo -I..\GUIinc -I..\TFT -I..\CM3 -I "C:\Keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\ObjFlash\app.o" --omf_browse "..\ObjFlash\app.crf" --depend "..\ObjFlash\app.d")
+F (.\app.c)(0x533A293B)(-c --device DARMSTM -g -O1 --apcs=interwork --split_sections -I..\APP -I..\BSP -I..\FWLib\inc -I..\Startup -I..\uCOS-II\Source -I..\uCOS-II\uC-CPU -I..\uCOS-II\uC-LIB -I..\uCOS-II\Ports -I..\GUIDemo -I..\GUIinc -I..\TFT -I..\CM3 -I "C:\Keil\ARM\INC\ST\STM32F10x" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o "..\ObjFlash\app.o" --omf_browse "..\ObjFlash\app.crf" --depend "..\ObjFlash\app.d")
 I (includes.h)(0x5338B599)
 I (C:\Keil\ARM\RV31\INC\stdio.h)(0x4A02846A)
 I (C:\Keil\ARM\RV31\INC\string.h)(0x4A02846A)
