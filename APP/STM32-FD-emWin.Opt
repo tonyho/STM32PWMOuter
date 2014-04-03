@@ -28,59 +28,60 @@ GRPOPT 13,(CM3),1,0,0
 GRPOPT 14,(font),1,0,0
 
 OPTFFF 1,1,2,0,0,0,0,0,<..\Startup\stm32f10x_startup.s><stm32f10x_startup.s> 
-OPTFFF 2,2,1,486539266,0,152,178,0,<.\app.c><app.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,240,3,0,0,153,1,0,0 }
+OPTFFF 2,2,1,184549378,0,431,448,0,<.\app.c><app.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,240,3,0,0,153,1,0,0 }
 OPTFFF 2,3,1,788529152,0,79,79,0,<.\stm32f10x_it.c><stm32f10x_it.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,240,3,0,0,153,1,0,0 }
-OPTFFF 3,4,1,301989888,0,4,20,0,<..\BSP\bsp.c><bsp.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,110,0,0,0,145,0,0,0,50,4,0,0,240,1,0,0 }
+OPTFFF 3,4,1,0,0,4,20,0,<..\BSP\bsp.c><bsp.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,110,0,0,0,145,0,0,0,50,4,0,0,240,1,0,0 }
 OPTFFF 4,5,1,0,0,0,0,0,<..\FWlib\SRC\misc.c><misc.c> 
 OPTFFF 4,6,1,0,0,0,0,0,<..\FWlib\SRC\stm32f10x_fsmc.c><stm32f10x_fsmc.c> 
 OPTFFF 4,7,1,0,0,0,0,0,<..\FWlib\SRC\stm32f10x_gpio.c><stm32f10x_gpio.c> 
 OPTFFF 4,8,1,0,0,0,0,0,<..\FWlib\SRC\stm32f10x_rcc.c><stm32f10x_rcc.c> 
 OPTFFF 4,9,1,0,0,0,0,0,<..\FWlib\SRC\stm32f10x_spi.c><stm32f10x_spi.c> 
-OPTFFF 5,10,1,0,0,1,1,0,<..\uCOS-II\Ports\os_cpu_c.c><os_cpu_c.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,132,0,0,0,174,0,0,0,72,4,0,0,13,2,0,0 }
-OPTFFF 5,11,1,0,0,0,0,0,<..\uCOS-II\Ports\os_dbg.c><os_dbg.c> 
-OPTFFF 5,12,2,0,0,1,1,0,<..\uCOS-II\Ports\os_cpu_a.asm><os_cpu_a.asm> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,22,0,0,0,29,0,0,0,218,3,0,0,124,1,0,0 }
-OPTFFF 6,13,2,0,0,1,1,0,<..\uCOS-II\uC-CPU\cpu_a.asm><cpu_a.asm> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,0,0,0,0,0,0,0,0,196,3,0,0,95,1,0,0 }
-OPTFFF 7,14,1,0,0,0,0,0,<..\uCOS-II\Source\os_core.c><os_core.c> 
-OPTFFF 7,15,1,0,0,0,0,0,<..\uCOS-II\Source\os_flag.c><os_flag.c> 
-OPTFFF 7,16,1,0,0,0,0,0,<..\uCOS-II\Source\os_mbox.c><os_mbox.c> 
-OPTFFF 7,17,1,0,0,0,0,0,<..\uCOS-II\Source\os_mem.c><os_mem.c> 
-OPTFFF 7,18,1,0,0,0,0,0,<..\uCOS-II\Source\os_mutex.c><os_mutex.c> 
-OPTFFF 7,19,1,0,0,0,0,0,<..\uCOS-II\Source\os_q.c><os_q.c> 
-OPTFFF 7,20,1,0,0,0,0,0,<..\uCOS-II\Source\os_sem.c><os_sem.c> 
-OPTFFF 7,21,1,0,0,0,0,0,<..\uCOS-II\Source\os_task.c><os_task.c> 
-OPTFFF 7,22,1,0,0,0,0,0,<..\uCOS-II\Source\os_time.c><os_time.c> 
-OPTFFF 7,23,1,0,0,0,0,0,<..\uCOS-II\Source\os_tmr.c><os_tmr.c> 
-OPTFFF 8,24,4,0,0,0,0,0,<..\GUILib\GUI_CM3.lib><GUI_CM3.lib> 
-OPTFFF 9,25,5,352321536,0,1,2,0,<.\readme.txt><readme.txt> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,66,0,0,0,87,0,0,0,6,4,0,0,182,1,0,0 }
-OPTFFF 10,26,1,419430400,0,1,1,0,<..\uCOS-IIGUI_X\GUI_X_Touch.c><GUI_X_Touch.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,132,0,0,0,174,0,0,0,72,4,0,0,13,2,0,0 }
-OPTFFF 10,27,1,0,0,1,1,0,<..\uCOS-IIGUI_X\GUI_X_uCOS.c><GUI_X_uCOS.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,88,0,0,0,116,0,0,0,28,4,0,0,211,1,0,0 }
-OPTFFF 11,28,1,452984832,0,1,1,0,<..\TFT\LCDConf.c><LCDConf.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,132,0,0,0,174,0,0,0,72,4,0,0,13,2,0,0 }
-OPTFFF 11,29,1,385875968,0,36,53,0,<..\TFT\GUIConf.c><GUIConf.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,240,3,0,0,153,1,0,0 }
-OPTFFF 12,30,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO.c><GUIDEMO.c> 
-OPTFFF 12,31,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Automotive.c><GUIDEMO_Automotive.c> 
-OPTFFF 12,32,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_BarGraph.c><GUIDEMO_BarGraph.c> 
-OPTFFF 12,33,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Bitmap.c><GUIDEMO_Bitmap.c> 
-OPTFFF 12,34,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_ColorBar.c><GUIDEMO_ColorBar.c> 
-OPTFFF 12,35,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Conf.c><GUIDEMO_Conf.c> 
-OPTFFF 12,36,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Cursor.c><GUIDEMO_Cursor.c> 
-OPTFFF 12,37,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Fading.c><GUIDEMO_Fading.c> 
-OPTFFF 12,38,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Graph.c><GUIDEMO_Graph.c> 
-OPTFFF 12,39,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_IconView.c><GUIDEMO_IconView.c> 
-OPTFFF 12,40,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_ImageFlow.c><GUIDEMO_ImageFlow.c> 
-OPTFFF 12,41,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Intro.c><GUIDEMO_Intro.c> 
-OPTFFF 12,42,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Listview.c><GUIDEMO_Listview.c> 
-OPTFFF 12,43,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Resource.c><GUIDEMO_Resource.c> 
-OPTFFF 12,44,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Skinning.c><GUIDEMO_Skinning.c> 
-OPTFFF 12,45,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Speed.c><GUIDEMO_Speed.c> 
-OPTFFF 12,46,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Speedometer.c><GUIDEMO_Speedometer.c> 
-OPTFFF 12,47,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_TransparentDialog.c><GUIDEMO_TransparentDialog.c> 
-OPTFFF 12,48,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Treeview.c><GUIDEMO_Treeview.c> 
-OPTFFF 12,49,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_VScreen.c><GUIDEMO_VScreen.c> 
-OPTFFF 12,50,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_WashingMachine.c><GUIDEMO_WashingMachine.c> 
-OPTFFF 12,51,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_ZoomAndRotate.c><GUIDEMO_ZoomAndRotate.c> 
-OPTFFF 13,52,1,0,0,0,0,0,<..\CM3\core_cm3.c><core_cm3.c> 
-OPTFFF 13,53,1,0,0,0,0,0,<..\CM3\system_stm32f10x.c><system_stm32f10x.c> 
-OPTFFF 14,54,1,0,0,0,0,0,<..\font\hwhb_32.c><hwhb_32.c> 
+OPTFFF 4,10,1,0,0,0,0,0,<..\FWlib\SRC\stm32f10x_tim.c><stm32f10x_tim.c> 
+OPTFFF 5,11,1,0,0,0,0,0,<..\uCOS-II\Ports\os_cpu_c.c><os_cpu_c.c> 
+OPTFFF 5,12,1,0,0,0,0,0,<..\uCOS-II\Ports\os_dbg.c><os_dbg.c> 
+OPTFFF 5,13,2,0,0,0,0,0,<..\uCOS-II\Ports\os_cpu_a.asm><os_cpu_a.asm> 
+OPTFFF 6,14,2,0,0,0,0,0,<..\uCOS-II\uC-CPU\cpu_a.asm><cpu_a.asm> 
+OPTFFF 7,15,1,0,0,0,0,0,<..\uCOS-II\Source\os_core.c><os_core.c> 
+OPTFFF 7,16,1,0,0,0,0,0,<..\uCOS-II\Source\os_flag.c><os_flag.c> 
+OPTFFF 7,17,1,0,0,0,0,0,<..\uCOS-II\Source\os_mbox.c><os_mbox.c> 
+OPTFFF 7,18,1,0,0,0,0,0,<..\uCOS-II\Source\os_mem.c><os_mem.c> 
+OPTFFF 7,19,1,0,0,0,0,0,<..\uCOS-II\Source\os_mutex.c><os_mutex.c> 
+OPTFFF 7,20,1,0,0,0,0,0,<..\uCOS-II\Source\os_q.c><os_q.c> 
+OPTFFF 7,21,1,0,0,0,0,0,<..\uCOS-II\Source\os_sem.c><os_sem.c> 
+OPTFFF 7,22,1,0,0,0,0,0,<..\uCOS-II\Source\os_task.c><os_task.c> 
+OPTFFF 7,23,1,0,0,0,0,0,<..\uCOS-II\Source\os_time.c><os_time.c> 
+OPTFFF 7,24,1,0,0,0,0,0,<..\uCOS-II\Source\os_tmr.c><os_tmr.c> 
+OPTFFF 8,25,4,0,0,0,0,0,<..\GUILib\GUI_CM3.lib><GUI_CM3.lib> 
+OPTFFF 9,26,5,352321536,0,1,2,0,<.\readme.txt><readme.txt> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,66,0,0,0,87,0,0,0,6,4,0,0,182,1,0,0 }
+OPTFFF 10,27,1,419430400,0,0,0,0,<..\uCOS-IIGUI_X\GUI_X_Touch.c><GUI_X_Touch.c> 
+OPTFFF 10,28,1,0,0,0,0,0,<..\uCOS-IIGUI_X\GUI_X_uCOS.c><GUI_X_uCOS.c> 
+OPTFFF 11,29,1,452984832,0,0,0,0,<..\TFT\LCDConf.c><LCDConf.c> 
+OPTFFF 11,30,1,385875968,0,0,0,0,<..\TFT\GUIConf.c><GUIConf.c> 
+OPTFFF 12,31,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO.c><GUIDEMO.c> 
+OPTFFF 12,32,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Automotive.c><GUIDEMO_Automotive.c> 
+OPTFFF 12,33,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_BarGraph.c><GUIDEMO_BarGraph.c> 
+OPTFFF 12,34,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Bitmap.c><GUIDEMO_Bitmap.c> 
+OPTFFF 12,35,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_ColorBar.c><GUIDEMO_ColorBar.c> 
+OPTFFF 12,36,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Conf.c><GUIDEMO_Conf.c> 
+OPTFFF 12,37,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Cursor.c><GUIDEMO_Cursor.c> 
+OPTFFF 12,38,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Fading.c><GUIDEMO_Fading.c> 
+OPTFFF 12,39,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Graph.c><GUIDEMO_Graph.c> 
+OPTFFF 12,40,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_IconView.c><GUIDEMO_IconView.c> 
+OPTFFF 12,41,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_ImageFlow.c><GUIDEMO_ImageFlow.c> 
+OPTFFF 12,42,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Intro.c><GUIDEMO_Intro.c> 
+OPTFFF 12,43,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Listview.c><GUIDEMO_Listview.c> 
+OPTFFF 12,44,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Resource.c><GUIDEMO_Resource.c> 
+OPTFFF 12,45,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Skinning.c><GUIDEMO_Skinning.c> 
+OPTFFF 12,46,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Speed.c><GUIDEMO_Speed.c> 
+OPTFFF 12,47,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Speedometer.c><GUIDEMO_Speedometer.c> 
+OPTFFF 12,48,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_TransparentDialog.c><GUIDEMO_TransparentDialog.c> 
+OPTFFF 12,49,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_Treeview.c><GUIDEMO_Treeview.c> 
+OPTFFF 12,50,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_VScreen.c><GUIDEMO_VScreen.c> 
+OPTFFF 12,51,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_WashingMachine.c><GUIDEMO_WashingMachine.c> 
+OPTFFF 12,52,1,0,0,0,0,0,<..\GUIDemo\GUIDEMO_ZoomAndRotate.c><GUIDEMO_ZoomAndRotate.c> 
+OPTFFF 13,53,1,0,0,0,0,0,<..\CM3\core_cm3.c><core_cm3.c> 
+OPTFFF 13,54,1,0,0,0,0,0,<..\CM3\system_stm32f10x.c><system_stm32f10x.c> 
+OPTFFF 14,55,1,0,0,0,0,0,<..\font\hwhb_32.c><hwhb_32.c> 
 
 
 TARGOPT 1, (Flash)
@@ -95,9 +96,20 @@ TARGOPT 1, (Flash)
   OPTAX 0
   OPTDL (SARMCM3.DLL)()(DARMSTM.DLL)(-pSTM32F103VE)(SARMCM3.DLL)()(TARMSTM.DLL)(-pSTM32F103VE)
   OPTDBG 49150,7,()()()()()()()()()() (Segger\JL2CM3.dll)()()()
+  OPTKEY 0,(DLGTARM)((1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(180=-1,-1,-1,-1,0)(120=-1,-1,-1,-1,0)(121=-1,-1,-1,-1,0)(122=-1,-1,-1,-1,0)(123=-1,-1,-1,-1,0)(124=-1,-1,-1,-1,0)(125=-1,-1,-1,-1,0)(126=-1,-1,-1,-1,0)(140=-1,-1,-1,-1,0)(240=-1,-1,-1,-1,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=-1,-1,-1,-1,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(133=-1,-1,-1,-1,0)(160=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(162=-1,-1,-1,-1,0)(210=-1,-1,-1,-1,0)(211=-1,-1,-1,-1,0)(220=-1,-1,-1,-1,0)(221=-1,-1,-1,-1,0)(230=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(DLGUARM)((105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0))
   OPTKEY 0,(JL2CM3)(-U -O14 -S0 -A0 -C-1 -JU1 -JI127.0.0.1 -JP0 -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TRE0 -FO31 -FD20000000 -FC800 -FN1 -FF0STM32F10x_512 -FS08000000 -FL080000)
-  OPTBB 0,0,322,1,0,0,0,0,0,0,<LCDConf.c>()()
-  OPTDF 0x0
+  OPTBB 0,0,359,1,134293152,0,0,0,0,1,<app.c>()()
+  OPTWA 0,1,(PwmCH1)
+  OPTWA 1,1,(PwmCH2)
+  OPTWA 2,1,(PwmCH3)
+  OPTWA 3,1,(PWM_CH1_Interval)
+  OPTWA 4,1,(PWM_CH2_Interval)
+  OPTWA 5,1,(PWM_CH3_Interval)
+  OPTWA 6,1,(BK_Light,0x0A)
+  OPTWA 7,1,(acBuffer,0x0A)
+  OPTDF 0x80
   OPTLE <>
   OPTLC <>
 EndOpt
